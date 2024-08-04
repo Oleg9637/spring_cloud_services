@@ -7,6 +7,11 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
+              <build path="$PROJECT_DIR$/eurekaClient" name="eurekaClient">
+                <projects>
+                  <project path="$PROJECT_DIR$/eurekaClient" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/eurekaServer" name="eurekaServer">
                 <projects>
                   <project path="$PROJECT_DIR$/eurekaServer" />
@@ -20,7 +25,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eurekaClient" />
             <option value="$PROJECT_DIR$/eurekaServer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eurekaClient" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/eurekaClient" />
           </set>
         </option>
       </GradleProjectSettings>
